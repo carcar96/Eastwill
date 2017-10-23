@@ -1,0 +1,627 @@
+*{
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+}
+body{
+	font-size: 12px;
+    font-family: Arial, 宋体;
+    background: rgb(255, 255, 255);
+}
+.bg{
+	position: relative;
+}
+.big_box{
+	position: relative;
+}
+.nav_box{
+	width: 100%;
+	/*height: 107px;*/
+	background: #fff;
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+.nav_box .nav{
+	padding: 34px 250px;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+.nav_box .nav img{
+	width: 130px;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+.nav_box .nav .btn{
+	float: right;
+	margin: 6px 0;
+	cursor: pointer;
+}
+.nav_box .nav .btn span{
+	display: block;
+	width:44px;
+	height: 2px;
+	background: #333;
+}
+.nav_box .nav .btn span.margin{
+	margin: 4px auto;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+.nav_box .nav .btn:hover span.margin:nth-child(1){
+	margin-top:0px;
+	margin-bottom: 8px;
+	transition: all 0.6s;
+	-moz-transition: all 0.6s; /* Firefox 4 */
+	-webkit-transition: all 0.6s; /* Safari 和 Chrome */
+	-o-transition: all 0.6s; /* Opera */
+}
+.nav_box .nav .btn:hover span:nth-child(3){
+	margin-top:8px;
+	margin-bottom: 0px;
+	transition: all 0.6s;
+	-moz-transition: all 0.6s; /* Firefox 4 */
+	-webkit-transition: all 0.6s; /* Safari 和 Chrome */
+	-o-transition: all 0.6s; /* Opera */
+}
+.content{	
+	margin-top: 107px;
+}
+.warp{
+	width: 100%;
+	height: 700px;
+	position: relative;
+}
+.warp ul{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.warp ul li{
+	width: 100%;
+	height: 100%;
+}
+.warp ul .grid{
+	width: 100%;
+	height: 100%;
+	background: url(./images/grid_bg.png);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.warp .advertise{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+}
+.warp .advertise h1{
+	font-size: 90px;
+	border: 2px solid #fff;
+	margin: 180px 200px 0 200px;
+}
+.warp .advertise h5{
+	font-size: 18px;
+	letter-spacing: 12px;
+	margin-top: 28px;
+}
+.warp .advertise p{
+	line-height: 18px;
+    margin-top: 28px;
+    width: 360px;
+    position: relative;
+    left: 50%;
+    margin-left: -180px;
+}
+.loading{
+	width: 540px;
+	height: 3px;
+	position: fixed;
+	bottom: 20px;
+	z-index: 999;
+	left: 50%;
+	margin-left: -270px;
+}
+.loading ol{
+
+}
+.loading ol li{
+	width: 120px;
+	height: 3px;
+	background: #fff;
+	float: left;
+}
+.loading ol li+li{
+	margin-left: 20px;
+}
+.loading ol li >span{
+	display: block;
+	width: 0;
+	height: 100%;
+	background: red; 
+}
+.layout{
+	text-align: center;
+	padding-top: 80px;
+	border-bottom: 1px #d3d3d3 solid;
+}
+.layout >h1{
+	font-size: 42px;
+    font-family: 'c';
+    color: #333333;
+}
+.layout >h4{
+	font-size: 12px;
+    color: #333333;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-family: 'b';
+}
+.layout >p{
+	font-size: 13px;
+    color: #6b6b6b;
+    margin-top: 15px;
+    font-family: Arial,"微软雅黑";
+    letter-spacing: 9px;
+}
+.layout .h_5 > h5{
+	font-size: 13px;
+    color: #6b6b6b;
+    line-height: 24px;
+    font-family: 'b';
+}
+.layout >.h_5{
+	margin-top: 25px;
+}
+.layout > img{
+	margin: 50px 0;
+	cursor: pointer;
+}
+.layout > img:hover{
+    transform:rotate(360deg);
+	-ms-transform:rotate(360deg); 	/* IE 9 */
+	-moz-transform:rotate(360deg); 	/* Firefox */
+	-webkit-transform:rotate(360deg); /* Safari 和 Chrome */
+	-o-transform:rotate(360deg); 	/* Opera */
+
+	transition: all 2s;
+	-moz-transition: all 2s; /* Firefox 4 */
+	-webkit-transition: all 2s; /* Safari 和 Chrome */
+	-o-transition: all 2s; /* Opera */
+}
+.works{
+	background: #f6f6f6;
+
+}
+.works .wio{
+	width: 80%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.works .wio ol{
+    padding: 20px 0;
+    float: right;
+    position: relative;
+}
+.works >h4{
+	margin-bottom: 0;
+}
+
+}
+.works .wio ol{
+	margin: 15px 0;
+	padding-right: 120px;
+}
+.works .wio ol li{
+	width: 42px;
+	height: 3px;
+	background: #ccc;
+	float: left;
+}
+.works .wio ol li+li{
+	margin-left: 25px;
+}
+.works .wio ol li >span {
+	display: block;
+	width: 0;
+	height: 100%;
+	background: red;
+}
+
+.works .wio ul li{
+	display: inline-block;
+	background: #fff;
+	padding-bottom: 50px;
+	cursor: pointer;
+}
+.works .wio ul li:hover{
+	box-shadow: 1px 1px 2px #dedede;
+	-moz-box-shadow: 1px 1px 2px #dedede; /* 老的 Firefox */
+}
+.works .wio ul li:hover .p1{
+	box-sizing: border-box;
+    border-top: 5px solid red;
+    padding-top: 21px;
+}
+.works .wio ul li+li{
+	margin-left: 20px;
+}
+.works .wio ul li .p1{
+	font-size: 14px;
+    font-family: Arial,"微软雅黑";
+    padding-top: 26px;
+    color: #444444;
+    margin-top: -3px;
+}
+.works .wio ul li .p2{
+    font-size: 12px;
+    font-family: Arial,"微软雅黑";
+    margin-top: 10px;
+    color: #afafaf;
+}
+.works .list_box{
+	width: 3252px;
+	overflow: hidden;
+	position: relative;
+	z-index: 101;
+}
+
+.works .list_box ul{
+	width: 1084px;
+	float: left;
+}
+.brand h4{
+	margin-bottom: 0;
+}
+.brand p{
+	font-size: 13px;
+    color: #6b6b6b;
+    margin-top: 12px;
+    line-height: 24px;
+    margin-top: 20px;
+    font-family: 'b';
+    letter-spacing: 0;
+    padding: 0 200px;
+    text-indent: 6px;
+}
+.brand .transform{
+	padding: 0 80px;
+}
+.brand .transform img{
+	width: 168px;
+    height: 168px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.brand .transform ul{
+	overflow: hidden;
+}
+
+.brand .transform ul li{
+	height: 240px;
+	margin: 0 130px;
+}
+.brand .transform ul li div{
+	float: left;
+}
+.brand .transform ul .four div+div{
+	margin-left: 72px;
+}
+.brand .transform ul .three div+div{
+	margin-left: 72px;
+}
+.brand .transform ul .two div+div{
+	margin-left: 72px;
+}
+.brand .transform ul .four{
+	position: relative;
+	top: 120px;
+}
+.brand .transform ul .three{
+	position: relative;
+    left: 120px;
+    top: 0;
+}
+.brand .transform ul .two{
+	position: relative;
+    left: 240px;
+    top: -120px;
+}
+.brand >img{
+	margin-top: -80px;
+}
+.brand .transform ul li >div{
+	position: relative;
+	cursor: pointer;
+}
+
+.brand .transform ul li >div .inline{
+	background: rgba(255,255,255,0.7);
+    position: absolute;
+    transform: rotate(45deg);
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+	transition: all 0.5s;
+}
+
+.brand .transform ul li >div span{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #333333;
+    line-height: 30px;
+	width: 100px;
+    height: 30px;
+    margin-left: -50px;
+    margin-top: -15px;
+    font-size: 0px;
+	transition: all 0.1s;    
+}
+
+.brand .transform ul li >div:hover .inline{
+	width: 150px;
+    height: 150px;
+    margin-left: -75px;
+    margin-top: -75px;
+    transition: all 0.5s;
+	-moz-transition: all 0.5s; /* Firefox 4 */
+	-webkit-transition: all 0.5s; /* Safari 和 Chrome */
+	-o-transition: all 0.5s; /* Opera */
+}
+
+.brand .transform ul li >div:hover span{
+    font-size: 18px;
+    transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+}
+
+.mobile >p{
+	letter-spacing: 0;
+	font-size: 12px;
+}
+.mobile .show{
+	margin-top: 80px;
+	position: relative;
+	height: 400px;
+}
+.mobile .show >img:nth-child(1){
+	width: 480px;
+	height:352px;
+	position: absolute;
+	left: 20%;
+}
+.mobile .show >img:nth-child(2){
+	width: 350px;
+	height:212px;
+	position: absolute;
+	right: 20%;
+	top: 40%;
+}
+.mobile .show >img:nth-child(3){
+	width: 250px;
+	height:302px;
+	position: absolute;
+	left: 44%;
+	top: 35%;
+}
+.mobile .show >img:nth-child(4){
+	width: 80px;
+	height:163px;
+	position: absolute;
+	right: 41%;
+	top: 65%;
+}
+.clients > p{
+	padding: 0 155px;
+}
+.clients > img{
+	margin-top: 50px;
+}
+.clients .partner{
+	margin-top: 80px;
+	padding: 0 80px;
+}
+.clients .partner > table{	
+    margin: auto;
+}
+.clients .partner > table td{
+	width: 240px;
+	height: 136px;
+	cursor: pointer;
+}
+.clients .partner > table tr:nth-child(1) >td{
+	border-bottom: 1px solid #dedede;
+}
+.clients .partner > table td:nth-child(2n){
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+}
+
+.footer{
+	width: 100%;
+}
+.footer .top{
+	width: 100%;
+	background: red;
+	height: 60px;
+}
+.footer .top >div{
+	width: 60px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: 0px auto;
+    top: 22px;
+    background: red;
+    cursor: pointer;
+}
+.footer .top b{
+	display: block;
+    width: 0px;
+    height: 0px;
+    border: 20px #000 solid;
+    overflow: hidden;
+    border-top: none;
+    border-color: #f00 transparent #000 transparent;
+    border-left-width: 30px;
+    border-right-width: 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.footer .top s{
+	display: block;
+    width: 0px;
+    height: 0px;
+    border: 20px #df1a0e solid;
+    overflow: hidden;
+    border-top: none;
+    border-color: #f00 transparent #f00 transparent;
+    border-left-width: 30px;
+    border-right-width: 30px;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+.footer .bottom{
+	width: 100%;
+	height: 84px;
+    line-height: 84px;
+    text-align: center;
+    background: #333333;
+    border-top: 1px #414141 solid;
+}
+.footer .medium{
+	position: relative;
+}
+.footer .medium > img{
+	width: 100%;
+	height: 450px;
+	vertical-align: middle;
+	border: none;
+}
+.footer .medium .beijing{
+	position: absolute;
+	top: 60px;	
+	color: #7e7e7d;
+	left: 70px;
+}
+.footer .medium .beijing > img{
+	margin-left: 20px;
+}
+.footer .medium .beijing >p{
+	line-height: 25px;
+}
+.footer .medium .icon{
+	background: url(http://www.eastwill.com/images/dizhi.png) no-repeat left; 
+	padding-left: 20px;
+}
+.footer .medium .right{
+	position: absolute;
+    top: 200px;
+    right: 50px;
+}
+.footer .medium .right >div{
+	float: left;
+	margin-right: 30px;
+	background: rgba(255, 255, 255, 0.2);
+	width: 40px;
+	height: 40px;
+	text-align: center;
+    line-height: 52px;
+    border-radius: 50%;
+}
+
+
+/**/
+.nav_box_1 {
+	border-bottom: 1px solid #ddd;
+}
+.nav_box_1 .nav{
+    padding: 22px 250px;
+    transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+.nav_box_1 .nav img{
+	width: 100px;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+.nav_box_1 .nav .btn{
+	margin-top: 2px;
+}
+.nav_box_1 .nav .btn span{
+	width: 36px;
+	transition: all 0.8s;
+	-moz-transition: all 0.8s; /* Firefox 4 */
+	-webkit-transition: all 0.8s; /* Safari 和 Chrome */
+	-o-transition: all 0.8s; /* Opera */
+}
+
+.pop_up{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10000;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	display: none;
+	color: #fff;
+}
+.pop_up >span{
+	display: block;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 80px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+}
+.pop_up .option{
+	width: 150px;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -75px;
+}
+.pop_up .option >ul{
+	width: 300px;
+	overflow: hidden;
+	font-size: 28px;
+	padding-bottom: 50px;
+}
+.pop_up .option >ul li{
+	width: 300px;
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.pop_up .option >ul li span{
+	display: block;
+	width: 150px;
+	float: left;
+}
